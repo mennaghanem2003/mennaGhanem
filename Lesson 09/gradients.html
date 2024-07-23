@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear and Radial Gradients Example</title>
+    <style>
+        :root {
+            --linear-gradient: linear-gradient(45deg, #ff6f61, #ffde7d);
+            --radial-gradient: radial-gradient(circle, #ff6f61, #ffde7d);
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .linear-gradient-box {
+            width: 300px;
+            height: 300px;
+            background: var(--linear-gradient);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.5em;
+            margin: 20px;
+        }
+
+        .radial-gradient-box {
+            width: 300px;
+            height: 300px;
+            background: var(--radial-gradient);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.5em;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="linear-gradient-box">
+        Linear Gradient
+    </div>
+    <div class="radial-gradient-box">
+        Radial Gradient
+    </div>
+</body>
+</html>

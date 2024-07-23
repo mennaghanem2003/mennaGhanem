@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Important Declaration Example</title>
+    <style>
+        p {
+            color: blue;
+        }
+
+        .important {
+            color: red !important;
+        }
+
+        #specific {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>This text is blue.</p>
+    <p class="important">This text is red.</p>
+    <p id="specific" class="important">This text is red, despite the ID rule.</p>
+</body>
+</html>

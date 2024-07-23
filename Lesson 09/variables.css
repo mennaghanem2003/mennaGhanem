@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Example</title>
+    <style>
+        /* Global CSS Variables */
+        :root {
+            --main-bg-color: #3498db;
+            --main-text-color:#2c3e50;
+            --padding:20px;
+        }
+
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--main-text-color);
+            padding: var(--padding);
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            background-color: var(--main-text-color);
+            color: var(--main-bg-color);
+            padding: var(--padding);
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Local CSS Variables */
+        .container {
+            --container-bg-color: #ecf0f1;
+            --container-padding: 15px;
+            background-color: var(--container-bg-color);
+            padding: var(--container-padding);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        .container h2 {
+            color: var(--main-text-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to the Container</h2>
+        <p>This container uses local CSS variables for styling.</p>
+        <button>Click Me</button>
+    </div>
+</body>
+</html>
